@@ -3,4 +3,19 @@
     --white-littleGreen: rgb(247, 250, 247);
     --modal-color: rgba(0, 0, 0, 0.2);
     --base-font: 'Roboto', sans-serif;
+    --text-color:black;
+}
+ul{
+    list-style-type: none;
+    padding:none;
+}
+.img__mini{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+.img__medium{
+    width: 66px;
+    height: 66px;
+    object-fit: contain;
 }
