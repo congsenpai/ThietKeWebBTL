@@ -1,0 +1,6 @@
+:root{
+    --white:#fff;
+    --white-littleGreen: rgb(247, 250, 247);
+    --modal-color: rgba(0, 0, 0, 0.2);
+    --base-font: 'Roboto', sans-serif;
+}

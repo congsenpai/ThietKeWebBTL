@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/keyframe.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -22,54 +24,62 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <nav id="navbar__big">
-                <div class="navbar__left">
-                    <img src="/assets/images/logo.png" alt="" style="height: 30px;object-fit: cover; ">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn">Ưu đãi</button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn">Chăm sóc sức khỏe</button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn">Thể thao</button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn">Gia dụng</button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn">Thiết bị điện tử</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar__right">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn">Hỗ trợ</button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn">Doanh nghiệp</button>
-                        </li>
-                    </ul>
-                    <div class="navbar__iconBox">
-                        <a href="" class="navbar__link">
-                            <i class="fa-solid fa-magnifying-glass navbar__icon"></i>
-                        </a>
-                        <a href="" class="navbar__link">
-                            <i class="fa-solid fa-cart-shopping navbar__icon"></i>
-                        </a>
-                        <a href="" class="navbar__link">
-                            <i class="fa-solid fa-clipboard-user navbar__icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </nav>
+    <script>
+        function modalOn(){
+            document.getElementById('modal').style.display='block';
+        }
+        function modalOff(){
+            document.getElementById('modal').style.display='none';
+        }
+    </script>
+    <nav id="navbar__big">
+        <div class="navbar__left">
+            <img src="/assets/images/logo.png" alt="" style="height: 30px;object-fit: cover; ">
+            <div id="modal"></div>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <button onmouseover="modalOn()" class="navbar__item-btn navbar__preferencial" onmouseleave="modalOff()">Ưu đãi
+                        <div class="preferencialBox">
+                        </div>
+                    </button>
+                </li>
+                <li class="navbar__item">
+                    <button class="navbar__item-btn">Chăm sóc sức khỏe</button>
+                </li>
+                <li class="navbar__item">
+                    <button class="navbar__item-btn">Thể thao</button>
+                </li>
+                <li class="navbar__item">
+                    <button class="navbar__item-btn">Gia dụng</button>
+                </li>
+                <li class="navbar__item">
+                    <button class="navbar__item-btn">Thiết bị điện tử</button>
+                </li>
+            </ul>
         </div>
-    </div>
+        <div class="navbar__right">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <button class="navbar__item-btn">Hỗ trợ</button>
+                </li>
+                <li class="navbar__item">
+                    <button class="navbar__item-btn">Doanh nghiệp</button>
+                </li>
+            </ul>
+            <div class="navbar__iconBox">
+                <a href="" class="navbar__link">
+                    <i class="fa-solid fa-magnifying-glass navbar__icon"></i>
+                </a>
+                <a href="" class="navbar__link">
+                    <i class="fa-solid fa-cart-shopping navbar__icon"></i>
+                </a>
+                <a href="" class="navbar__link">
+                    <i class="fa-solid fa-clipboard-user navbar__icon"></i>
+                </a>
+            </div>
+        </div>
+
+    </nav>
 
 
 
