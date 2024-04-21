@@ -5,17 +5,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 .navbar__left {
   display: flex;
   align-items: center;
-
 }
 .navbar__right {
   display: flex;
   align-items: center;
- justify-content: flex-end; 
+  justify-content: flex-end;
 }
 .navbar__list {
   list-style-type: none;
@@ -35,11 +33,13 @@
 .navbar__link {
   text-decoration: none;
   color: black;
+  padding: 10px 0;
+  border-radius: 8px;
 }
 .navbar__item {
   margin: 0 6px;
 }
-.navbar__item:nth-child(1){
+.navbar__item:nth-child(1) {
   margin-left: 30px;
 }
 .navbar__item-btn {
@@ -64,6 +64,44 @@
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
+.navbar__link:hover {
+  background-color: #f7f7f7;
+}
+.navbar__logo {
+  max-height: 45px;
+  width: 180px;
+}
+.toggleBar {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0 10px;
+}
+.sidebar__category {
+  display: none;
+}
+.sidebar__content {
+  position: fixed;
+  background-color: black;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 3;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+.sidebar__category:hover {
+  cursor: pointer;
+}
+.sidebar__checkbox:checked ~ .sidebar__content {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.sidebar__checkbox {
+  display: none !important;
+}
+
 
 #modal {
   position: fixed;
@@ -76,6 +114,20 @@
   z-index: 1;
   animation: fadeIn 0.1s ease-in-out;
   will-change: opacity;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--modal-color);
+  display: none;
+  z-index: 2;
+  animation: fadeIn ease-in forwards;
+}
+.sidebar__checkbox:checked ~ .modal__overlay {
+  display: block;
 }
 /* Preferencial Box */
 .preferencialBox {
@@ -178,7 +230,6 @@
   text-align: center;
 }
 
-
 .healthCareBox__item {
   font-size: 1rem;
   color: black;
@@ -187,13 +238,13 @@
   text-align: left;
   padding-left: 18px;
 }
-.healthCareBox__item:nth-child(1){
+.healthCareBox__item:nth-child(1) {
   margin-top: 15px;
 }
 .healthCareBox__item:hover {
   cursor: pointer;
 }
-.hcbContent__left{
+.hcbContent__left {
   width: 30%;
 }
 .hcbContent__left::after {
@@ -204,7 +255,7 @@
   top: 14%;
   left: 26%;
 }
-.imgBox{
+.imgBox {
   background-color: var(--white);
   border-radius: 8px;
   align-items: center;
@@ -212,16 +263,16 @@
   height: 100px;
   margin: auto;
 }
-.imgBox span{
+.imgBox span {
   display: block;
   font-size: 0.8rem;
 }
-.contentBox{
+.contentBox {
   margin-top: 20px;
 }
 .row:not(:first-child) {
   margin-top: 10px;
 }
-.imgBox:hover{
+.imgBox:hover {
   cursor: pointer;
 }

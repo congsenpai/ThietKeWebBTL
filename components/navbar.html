@@ -25,175 +25,182 @@
 </head>
 
 <body>
-    <nav id="navbar__big">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="navbar__left col-md-8">
-                    <img src="/assets/images/logo.png" alt="" style="height: 30px;object-fit: contain; ">
-                    <div id="modal"></div>
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <button onmouseover="modalOn()" class="navbar__item-btn navbar__preferencial"
-                                onmouseleave="modalOff()">Ưu đãi
-                                <div class="preferencialBox">
-                                    <div class="preferencialBox__content">
-                                        <ul class="preferencialBox__header">Mới & Nổi bật
-                                            <li class="preferencialBox__item">Giải pháp IOT</li>
-                                            <li class="preferencialBox__item">SmartBrain Shop</li>
-                                            <li class="preferencialBox__item">Lễ hội và sự kiện</li>
-                                        </ul>
-                                        <ul class="preferencialBox__header">Deal Shock
-                                            <li class="preferencialBox__item">Tất cả ưu đãi</li>
-                                            <li class="preferencialBox__item">Ưu đãi sinh viên</li>
-                                            <li class="preferencialBox__item">Ưu đãi nhân viên đối tác</li>
-                                            <li class="preferencialBox__item">Ưu đãi chính phủ</li>
-                                            <li class="preferencialBox__item">Ưu đãi sản phẩm mới</li>
-                                        </ul>
-                                        <ul class="preferencialBox__header">Lợi thế VIP
-                                            <li class="preferencialBox__item">Khám phá lợi thế</li>
-                                            <li class="preferencialBox__item">Cửa hàng VIP</li>
-                                            <li class="preferencialBox__item">Trả góp 0%</li>
-                                            <li class="preferencialBox__item">Miễn phí ship</li>
-                                            <li class="preferencialBox__item">Điểm khách hàng thân thiết</li>
-                                        </ul>
-                                    </div>
-
+    <div class="container-fluid">
+        <nav id="navbar__big">
+            <div class="navbar__logo">
+                <img src="/assets/images/logo.png" alt="" class="img-fluid">
+            </div>
+            <div class="navbar__left">
+                <div id="modal"></div>
+                <ul class="navbar__list d-none d-lg-flex">
+                    <li class="navbar__item">
+                        <button onmouseover="modalOn()" class="navbar__item-btn navbar__preferencial"
+                            onmouseleave="modalOff()">Ưu đãi
+                            <div class="preferencialBox">
+                                <div class="preferencialBox__content">
+                                    <ul class="preferencialBox__header">Mới & Nổi bật
+                                        <li class="preferencialBox__item">Giải pháp IOT</li>
+                                        <li class="preferencialBox__item">SmartBrain Shop</li>
+                                        <li class="preferencialBox__item">Lễ hội và sự kiện</li>
+                                    </ul>
+                                    <ul class="preferencialBox__header">Deal Shock
+                                        <li class="preferencialBox__item">Tất cả ưu đãi</li>
+                                        <li class="preferencialBox__item">Ưu đãi sinh viên</li>
+                                        <li class="preferencialBox__item">Ưu đãi nhân viên đối tác</li>
+                                        <li class="preferencialBox__item">Ưu đãi chính phủ</li>
+                                        <li class="preferencialBox__item">Ưu đãi sản phẩm mới</li>
+                                    </ul>
+                                    <ul class="preferencialBox__header">Lợi thế VIP
+                                        <li class="preferencialBox__item">Khám phá lợi thế</li>
+                                        <li class="preferencialBox__item">Cửa hàng VIP</li>
+                                        <li class="preferencialBox__item">Trả góp 0%</li>
+                                        <li class="preferencialBox__item">Miễn phí ship</li>
+                                        <li class="preferencialBox__item">Điểm khách hàng thân thiết</li>
+                                    </ul>
                                 </div>
-                            </button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn navbar__healthCare" onmouseover="modalOn()"
-                                onmouseleave="modalOff()">Chăm sóc sức khỏe
-                                <div class="healthCareBox">
-                                    <div class="healthCareBox__content row">
-                                        <ul class="healthCareBox__header hcbContent__left col-md-3">Nhóm mặt hàng
-                                            <li class="healthCareBox__item">Làm đẹp</li>
-                                            <li class="healthCareBox__item">Bổ mắt, não</li>
-                                            <li class="healthCareBox__item">Sức khỏe nội tiết</li>
-                                            <li class="healthCareBox__item">Bổ trợ xương khớp</li>
-                                            <li class="healthCareBox__item">Hỗ trợ tiêu hóa</li>
-                                            <li class="healthCareBox__item">Bổ gan, giải nhiệt</li>
-                                        </ul>
-                                        <div class="healthCareBox__header col-md-9">Các thương hiệu nổi tiếng
-                                            <div class="container contentBox">
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <div class="imgBox">
-                                                            <img src="/assets/images/brand/healthCare/OGX.png" alt=""
-                                                                class="img__medium">
-                                                            <span>Hãng OGX</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="imgBox">
-                                                            <img src="/assets/images/brand/healthCare/Chanel.png" alt=""
-                                                                class="img__medium">
-                                                            <span>Hãng Chanel</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="imgBox">
-                                                            <img src="/assets/images/brand/healthCare/Dior.png" alt=""
-                                                                class="img__medium">
-                                                            <span>Hãng Dior</span>
-                                                        </div>
+    
+                            </div>
+                        </button>
+                    </li>
+                    <li class="navbar__item">
+                        <button class="navbar__item-btn navbar__healthCare" onmouseover="modalOn()"
+                            onmouseleave="modalOff()">Chăm sóc sức khỏe
+                            <div class="healthCareBox">
+                                <div class="healthCareBox__content row">
+                                    <ul class="healthCareBox__header hcbContent__left col-md-3">Nhóm mặt hàng
+                                        <li class="healthCareBox__item">Làm đẹp</li>
+                                        <li class="healthCareBox__item">Bổ mắt, não</li>
+                                        <li class="healthCareBox__item">Sức khỏe nội tiết</li>
+                                        <li class="healthCareBox__item">Bổ trợ xương khớp</li>
+                                        <li class="healthCareBox__item">Hỗ trợ tiêu hóa</li>
+                                        <li class="healthCareBox__item">Bổ gan, giải nhiệt</li>
+                                    </ul>
+                                    <div class="healthCareBox__header col-md-9">Các thương hiệu nổi tiếng
+                                        <div class="container contentBox">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="imgBox">
+                                                        <img src="/assets/images/brand/healthCare/OGX.png" alt=""
+                                                            class="img__medium">
+                                                        <span>Hãng OGX</span>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <div class="imgBox">
-                                                            <img src="/assets/images/brand/healthCare/Solgar.png" alt=""
-                                                                class="img__medium">
-                                                            <span>Hãng Solgar</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="imgBox">
-                                                            <img src="/assets/images/brand/healthCare/nowFood.png"
-                                                                alt="" class="img__medium">
-                                                            <span>Hãng NowFood</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="imgBox">
-                                                            <img src="/assets/images/brand/healthCare/Enzymedica.png"
-                                                                alt="" class="img__medium">
-                                                            <span>Hãng Enzymedica</span>
-                                                        </div>
+                                                <div class="col-md-4">
+                                                    <div class="imgBox">
+                                                        <img src="/assets/images/brand/healthCare/Chanel.png" alt=""
+                                                            class="img__medium">
+                                                        <span>Hãng Chanel</span>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <div class="imgBox">
-                                                            <img src="/assets/images/brand/healthCare/GNC.png" alt=""
-                                                                class="img__medium">
-                                                            <span>Hãng GNC</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="imgBox">
-                                                            <img src="/assets/images/brand/healthCare/Herbalife.png"
-                                                                alt="" class="img__medium">
-                                                            <span>Hãng Herbarlife</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="imgBox">
-                                                            <img src="/assets/images/brand/healthCare/NordicNaturals.png"
-                                                                alt="" class="img__medium">
-                                                            <span>Hãng NordicNaturals</span>
-                                                        </div>
+                                                <div class="col-md-4">
+                                                    <div class="imgBox">
+                                                        <img src="/assets/images/brand/healthCare/Dior.png" alt=""
+                                                            class="img__medium">
+                                                        <span>Hãng Dior</span>
                                                     </div>
                                                 </div>
                                             </div>
-
-
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="imgBox">
+                                                        <img src="/assets/images/brand/healthCare/Solgar.png" alt=""
+                                                            class="img__medium">
+                                                        <span>Hãng Solgar</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="imgBox">
+                                                        <img src="/assets/images/brand/healthCare/nowFood.png" alt=""
+                                                            class="img__medium">
+                                                        <span>Hãng NowFood</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="imgBox">
+                                                        <img src="/assets/images/brand/healthCare/Enzymedica.png" alt=""
+                                                            class="img__medium">
+                                                        <span>Hãng Enzymedica</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="imgBox">
+                                                        <img src="/assets/images/brand/healthCare/GNC.png" alt=""
+                                                            class="img__medium">
+                                                        <span>Hãng GNC</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="imgBox">
+                                                        <img src="/assets/images/brand/healthCare/Herbalife.png" alt=""
+                                                            class="img__medium">
+                                                        <span>Hãng Herbarlife</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="imgBox">
+                                                        <img src="/assets/images/brand/healthCare/NordicNaturals.png" alt=""
+                                                            class="img__medium">
+                                                        <span>Hãng NordicNaturals</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+    
+    
                                     </div>
                                 </div>
-                            </button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn" onmouseover="modalOn()" onmouseleave="modalOff()">Thể
-                                thao</button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn" onmouseover="modalOn()" onmouseleave="modalOff()">Gia
-                                dụng</button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn" onmouseover="modalOn()" onmouseleave="modalOff()">Thiết bị
-                                điện tử
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar__right col-md-4">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn">Hỗ trợ</button>
-                        </li>
-                        <li class="navbar__item">
-                            <button class="navbar__item-btn">Doanh nghiệp</button>
-                        </li>
-                    </ul>
-                    <div class="navbar__iconBox">
-                        <a href="" class="navbar__link">
-                            <i class="fa-solid fa-magnifying-glass navbar__icon"></i>
-                        </a>
-                        <a href="" class="navbar__link">
-                            <i class="fa-solid fa-cart-shopping navbar__icon"></i>
-                        </a>
-                        <a href="" class="navbar__link">
-                            <i class="fa-solid fa-clipboard-user navbar__icon"></i>
-                        </a>
-                    </div>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="navbar__item">
+                        <button class="navbar__item-btn" onmouseover="modalOn()" onmouseleave="modalOff()">Thể
+                            thao</button>
+                    </li>
+                    <li class="navbar__item">
+                        <button class="navbar__item-btn" onmouseover="modalOn()" onmouseleave="modalOff()">Gia
+                            dụng</button>
+                    </li>
+                    <li class="navbar__item">
+                        <button class="navbar__item-btn" onmouseover="modalOn()" onmouseleave="modalOff()">Thiết bị
+                            điện tử
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__right">
+                <ul class="navbar__list d-none d-xl-flex">
+                    <li class="navbar__item">
+                        <button class="navbar__item-btn">Hỗ trợ</button>
+                    </li>
+                    <li class="navbar__item">
+                        <button class="navbar__item-btn">Doanh nghiệp</button>
+                    </li>
+                </ul>
+                <div class="navbar__iconBox">
+                    <a href="" class="navbar__link">
+                        <i class="fa-solid fa-magnifying-glass navbar__icon"></i>
+                    </a>
+                    <a href="" class="navbar__link">
+                        <i class="fa-solid fa-cart-shopping navbar__icon"></i>
+                    </a>
+                    <a href="" class="navbar__link">
+                        <i class="fa-solid fa-clipboard-user navbar__icon"></i>
+                    </a>
+                    <label for="sidebar-input" class="toggleBar d-lg-none navbar__link" >
+                        <i class="fa-solid fa-bars navbar__icon "></i>
+                    </label>
+                    <input type="checkbox" name="" id="sidebar-input" class="sidebar__checkbox">
+                    <label for="sidebar-input" class="modal__overlay">
+                    </label>
+                    <div class="sidebar__content"></div>    
+                    
                 </div>
             </div>
-        </div>
-
-
-    </nav>
+        </nav>
+    </div>
+   
 
 
 
