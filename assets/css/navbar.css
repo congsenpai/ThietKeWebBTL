@@ -10,16 +10,19 @@
 .navbar__left {
   display: flex;
   align-items: center;
+
 }
 .navbar__right {
   display: flex;
   align-items: center;
+ justify-content: flex-end; 
 }
 .navbar__list {
   list-style-type: none;
   display: flex;
   align-items: center;
   margin: 0;
+  padding: 0;
 }
 .navbar__iconBox {
   display: flex;
@@ -34,7 +37,10 @@
   color: black;
 }
 .navbar__item {
-  margin: 0 8px;
+  margin: 0 6px;
+}
+.navbar__item:nth-child(1){
+  margin-left: 30px;
 }
 .navbar__item-btn {
   background-color: rgb(255, 255, 255);
@@ -60,11 +66,11 @@
 }
 
 #modal {
-  position: absolute;
+  position: fixed;
   display: none;
   width: 100%;
-  height: 85%;
-  top: 10%;
+  height: 90vh;
+  top: 10vh;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -215,4 +221,7 @@
 }
 .row:not(:first-child) {
   margin-top: 10px;
+}
+.imgBox:hover{
+  cursor: pointer;
 }
