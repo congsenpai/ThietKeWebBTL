@@ -14,4 +14,8 @@ function fetchNavbar() {
         .catch(error => console.error('Fetch error:', error));
 }
 
+
 window.onload = fetchNavbar;
+
+
+
