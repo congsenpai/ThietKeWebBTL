@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/scripts/login.js" defer type="module"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', medium;
+        }
+
+        body{
+            background-color: #c9d6ff;
+            background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .input-container h1{
+            font-family: Montserrat Extrabold;
+            text-align: center;
+            
+        }
+        .input-container {
+            background-color: #fff;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            position: relative;
+            overflow: hidden;
+            width: 768px;
+            max-width: 100%;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .input-container button{
+            text-align: center;
+            background-color: #512da8;
+            color: #fff;
+            font-size: 14px;
+            padding: 10px 45px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .input-container input{
+            text-align: left;
+            background-color:#eee;
+            border: none;
+            margin: 0;
+            padding: 10px;
+            font-size: 13px;
+            border-radius: 8px;
+            width: 100%;
+            outline: none;   
+        }
+        .input-container form{
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .form-container {
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>    
+  <div class="container md input-container">
+    <div class="form-container">
+        <h1>Đăng nhập</h1>
+        <form>
+          <div class="mb-3 w-75 ">
+            <label for="inputEmail" class="form-label">Tên tài khoản:</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Tên tài khoản">
+          </div>
+          <div class="mb-3 w-75">
+            <label for="inputPassword" class="form-label">Mật khẩu:</label>
+            <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+            </div>
+            <a href="register.html">Chưa có tài khoản? Đăng ký ngay</a>
+            <div class="submit-container">
+            <button type="submit" class="btn btn-primary" id="submit">Đăng nhập</button>
+            </div>
+          </form>
+</body>
+</html>
