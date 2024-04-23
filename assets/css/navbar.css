@@ -5,10 +5,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
-  width: 100%;
-=======
->>>>>>> 6da96cb77708d0d01299636b356f01c81858dd19
 }
 .navbar__left {
   display: flex;
@@ -32,11 +28,7 @@
 }
 .navbar__icon {
   margin: 0 10px;
-<<<<<<< HEAD
-  font-size: 1.8rem;
-=======
   font-size: 1.6rem;
->>>>>>> 6da96cb77708d0d01299636b356f01c81858dd19
 }
 .navbar__link {
   text-decoration: none;
@@ -60,11 +52,7 @@
   transition: color 0.1s ease-in-out;
   border: none;
   cursor: pointer;
-<<<<<<< HEAD
-  font-size: 1.4rem;
-=======
   font-size: 1.3rem;
->>>>>>> 6da96cb77708d0d01299636b356f01c81858dd19
   font-weight: 500;
   display: inline-flex;
   text-wrap: nowrap;
@@ -201,13 +189,8 @@
   position: absolute;
   display: none;
   width: 100%;
-<<<<<<< HEAD
-  height: 85%;
-  top: 10%;
-=======
   height: 90vh;
   top: 10vh;
->>>>>>> 6da96cb77708d0d01299636b356f01c81858dd19
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -372,7 +355,6 @@
 .row:not(:first-child) {
   margin-top: 10px;
 }
-<<<<<<< HEAD
 
 /* sportBox */
 .sportBox {
@@ -557,8 +539,3 @@
 .electronicsBox__item:hover {
   cursor: pointer;
 }
-=======
-.imgBox:hover {
-  cursor: pointer;
-}
->>>>>>> 6da96cb77708d0d01299636b356f01c81858dd19
