@@ -29,7 +29,7 @@
   }
   
   .footer-wrap h3 {
-      color: #fff;
+      color: #000;
       font-size: 17px;
       text-transform: uppercase;
       margin-bottom: 25px;
@@ -38,12 +38,12 @@
   .footer-wrap p {
       font-size: 13px;
       line-height: 24px;
-      color: #b3b3b3;
+      color: #000;
       margin-top: 15px;
   }
   
   .footer-wrap p a {
-      color: #fff;
+      color: #000;
       text-decoration: underline;
       font-style: italic;
   }
@@ -56,7 +56,7 @@
   .footer-links li a {
       font-size: 13px;
       line-height: 30px;
-      color: #ccc;
+      color: #000;
       text-decoration: none;
   }
   
@@ -65,13 +65,13 @@
       content: "\f105";
       font-family: 'FontAwesome';
       padding-right: 10px;
-      color: #ccc;
+      color: #000;
   }
   
   .footer-category li a {
       font-size: 13px;
       line-height: 30px;
-      color: #ccc;
+      color: #000;
       text-decoration: none;
   }
   
@@ -79,12 +79,12 @@
       content: "\f105";
       font-family: 'FontAwesome';
       padding-right: 10px;
-      color: #b3b3b3;
+      color: #000;
   }
   
   .address {
       
-      color: #b3b3b3;
+      color: #0000;
       font-size: 14px;
       position: relative;
       padding-left: 30px;
@@ -101,7 +101,7 @@
   
   .info a {
    
-      color: #b3b3b3;
+      color: #000;
       font-size: 14px;
       line-height: 30px;
       font-weight: normal;
@@ -113,7 +113,7 @@
   
   .info a {
   
-      color: #b3b3b3;
+      color: #000;
       font-size: 14px;
       line-height: 30px;
       font-weight: normal;
@@ -126,7 +126,7 @@
   .copyright {
       border-top: 1px solid #111;
       font-size: 14px;
-      color: #ccc;
+      color: #000;
       padding-top: 15px;
       text-align: center;
       padding-bottom: 15px;
@@ -145,7 +145,7 @@
       
   }
   footer{
-      background: #333;
+      background: #000;
   }
   
   footer .newsletter input[type="text"] {
@@ -171,7 +171,6 @@
   
   footer .second_class_bdr{
       padding-top: 25px;
-      border-top:1px solid #222;
   }
   
   footer .btn-facebook a {
