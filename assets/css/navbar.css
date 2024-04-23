@@ -196,7 +196,7 @@
   height: 80%;
   position: absolute;
   top: 14%;
-  left: 24%;
+  left: 26%;
 }
 .imgBox{
   background-color: var(--white);
@@ -215,4 +215,188 @@
 }
 .row:not(:first-child) {
   margin-top: 10px;
+}
+
+/* sportBox */
+.sportBox {
+  position: absolute;
+  background-color: var(--white-littleGreen);
+  display: none;
+  transform-origin: 20% top;
+  animation: Growth ease-in 0.2s;
+  will-change: opacity, transform;
+  border-radius: 2px;
+  z-index: 2;
+  width: 600px;
+  height: 400px;
+  top: 40px;
+  left: -70px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.sportBox:hover {
+  cursor: default;
+}
+.navbar__sport:hover .sportBox {
+  display: block;
+}
+.sportBox::before {
+  position: absolute;
+  display: block;
+  width: 40%;
+  height: 30px;
+  content: "";
+  top: -30px;
+  left: 30px;
+  background-color: transparent;
+}
+.sportBox__content {
+  display: flex;
+  text-align: center;
+}
+.sportBox__header {
+  padding: 20px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  cursor: default;
+  text-align: center;
+}
+.sportBox__item {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 300;
+  margin-top: 15px;
+  text-align: left;
+  padding-left: 18px;
+}
+.sportBox__item:nth-child(1){
+  margin-top: 15px;
+}
+.sport  Box__item:hover {
+  cursor: pointer;
+}
+/* Houseware Box */
+.housewareBox {
+  position: absolute;
+  background-color: var(--white-littleGreen);
+  display: none;
+  transform-origin: 20% top;
+  animation: Growth ease-in 0.2s;
+  will-change: opacity, transform;
+  border-radius: 2px;
+  z-index: 2;
+  width: 900px;
+  height: 300px;
+  top: 40px;
+  left: -70px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.housewareBox::before {
+  position: absolute;
+  display: block;
+  width: 30%;
+  height: 30px;
+  content: "";
+  top: -30px;
+  background-color: transparent;
+}
+.housewareBox:hover {
+  cursor: default;
+}
+
+.navbar__houseware:hover .housewareBox {
+  display: block;
+}
+.housewareBox__content {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+.housewareBox__header {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  cursor: default;
+}
+.housewareBox__item {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.housewareBox__item:hover {
+  cursor: pointer;
+}
+/* electronicsBox */
+.electronicsBox {
+  position: absolute;
+  background-color: var(--white-littleGreen);
+  display: none;
+  transform-origin: 20% top;
+  animation: Growth ease-in 0.2s;
+  will-change: opacity, transform;
+  border-radius: 2px;
+  z-index: 2;
+  width: 700px;
+  height: 500px;
+  top: 40px;
+  left: -70px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.electronicsBox:hover {
+  cursor: default;
+}
+.navbar__electronics:hover .electronicsBox {
+  display: block;
+}
+.electronicsBox::before {
+  position: absolute;
+  display: block;
+  width: 40%;
+  height: 30px;
+  content: "";
+  top: -30px;
+  left: 30px;
+  background-color: transparent;
+}
+.electronicsBox__content {
+  display: flex;
+  text-align: center;
+}
+.electronicsBox__header {
+  position: relative;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  cursor: default;
+  text-align: left;
+}
+.electronicsBox__header::after{
+  position: absolute;
+  content: "";
+  height: 65%;
+  width: 2px;
+  background-color: var(--modal-color);
+  left: 20px;
+  top: 60px;
+}
+.electronicsBox__item {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 300;
+  margin-top: 15px;
+  text-align: left;
+  padding-left: 20px;
+}
+.electronicsBox__item:nth-child(1){
+  margin-top: 15px;
+}
+.electronicsBox__item:hover {
+  cursor: pointer;
 }
