@@ -12,25 +12,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../assets/scripts/reg.js" defer type="module"></script>
+    <script>
+        $(function(){
+          $("#navbar").load("../components/navbar.html"); 
+          $("#footer").load("../components/footer.html"); 
+        });
+    </script>
+
     <style>
-        *{
+        .container {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Montserrat';
             font-weight: 600;
         }
-
-        body{
-            background-color: #c9d6ff;
-            background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+        .login{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            height: 100vh;
+            height: 45vh;
         }
         .input-container h1{
+            font-family: 'Montserrat';
             font-weight: 800;
             text-align: center;
         }
@@ -66,7 +71,7 @@
             border: none;
             margin: 0;
             padding: 10px;
-            font-size: 13px;
+            font-size: 17px;
             border-radius: 8px;
             width: 100%;
             outline: none;   
@@ -86,9 +91,27 @@
             width: 100%;
         }
 
+        @media (max-width: 500px) {
+        .input-container h1 {
+            font-size: 32px;
+        }
+        .login{
+            height: 38vh;
+        }
+        .input-container input{
+            font-size: 14px;
+        }
+        .reg{
+            text-align: center;
+            text-wrap: balance;
+        }
+       }
+
     </style>
 </head>
 <body>    
+    <div id="navbar"></div>
+    <div class="login"> 
     <div class="container md input-container">
         <div class="form-container">
         <h1>Đăng ký</h1>
@@ -101,10 +124,14 @@
               <label for="inputPassword" class="form-label">Mật khẩu:</label>
               <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
             </div>
-            <a href="login.html">Đã có tài khoản? Đăng nhập</a>
+            <a class ="reg" href="login.html">Đã có tài khoản? Đăng nhập</a>
             <div class="submit-container">
             <button type="submit" class="btn btn-primary" id="submit">Đăng ký</button>
             </div>
-          </form>
+        </form>
+    </div>
+</div>
+</div>
+        <div id="footer"></div>
 </body>
 </html>
