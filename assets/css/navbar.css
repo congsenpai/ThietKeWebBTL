@@ -5,6 +5,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+#navbar__big::after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 30px);
+  height: 1px;
+  bottom: 0;
+  background-color: var(--modal-color);
+  left: 15px;
 }
 .navbar__left {
   display: flex;
@@ -156,7 +166,7 @@
   font-size: 0.9rem;
   font-weight: 400;
 }
-.sidebar__login{
+.sidebar__login {
   position: relative;
 }
 .sidebar__login::after {
@@ -167,7 +177,7 @@
   left: 0;
   border-bottom: 1px solid var(--modal-color);
 }
-.sidebar__part1{
+.sidebar__part1 {
   position: relative;
   padding-bottom: 5px;
   margin-left: 15px;
@@ -180,10 +190,9 @@
   left: 0;
   border-bottom: 1px solid var(--modal-color);
 }
-.sidebar__part2{
+.sidebar__part2 {
   margin-left: 15px;
 }
-
 
 #modal {
   position: absolute;
@@ -231,10 +240,11 @@
 .preferencialBox::before {
   position: absolute;
   display: block;
-  width: 30%;
+  width: 12%;
   height: 30px;
   content: "";
   top: -30px;
+  left: 10%;
   background-color: transparent;
 }
 .preferencialBox:hover {
@@ -292,11 +302,11 @@
 .healthCareBox::before {
   position: absolute;
   display: block;
-  width: 40%;
+  width: 28%;
   height: 30px;
   content: "";
   top: -30px;
-  left: 30px;
+  left: 10%;
   background-color: transparent;
 }
 .healthCareBox__content {
@@ -335,7 +345,7 @@
   height: 80%;
   position: absolute;
   top: 14%;
-  left: 26%;
+  left: 15%;
 }
 .imgBox {
   background-color: var(--white);
@@ -382,11 +392,11 @@
 .sportBox::before {
   position: absolute;
   display: block;
-  width: 40%;
+  width: 20%;
   height: 30px;
   content: "";
   top: -30px;
-  left: 30px;
+  left: 10%;
   background-color: transparent;
 }
 .sportBox__content {
@@ -409,10 +419,10 @@
   text-align: left;
   padding-left: 18px;
 }
-.sportBox__item:nth-child(1){
+.sportBox__item:nth-child(1) {
   margin-top: 15px;
 }
-.sport  Box__item:hover {
+.sport Box__item:hover {
   cursor: pointer;
 }
 /* Houseware Box */
@@ -435,10 +445,11 @@
 .housewareBox::before {
   position: absolute;
   display: block;
-  width: 30%;
+  width: 12%;
   height: 30px;
   content: "";
   top: -30px;
+  left: 7%;
   background-color: transparent;
 }
 .housewareBox:hover {
@@ -496,11 +507,11 @@
 .electronicsBox::before {
   position: absolute;
   display: block;
-  width: 40%;
+  width: 22%;
   height: 30px;
   content: "";
   top: -30px;
-  left: 30px;
+  left: 12%;
   background-color: transparent;
 }
 .electronicsBox__content {
@@ -516,7 +527,7 @@
   cursor: default;
   text-align: left;
 }
-.electronicsBox__header::after{
+.electronicsBox__header::after {
   position: absolute;
   content: "";
   height: 65%;
@@ -533,7 +544,7 @@
   text-align: left;
   padding-left: 20px;
 }
-.electronicsBox__item:nth-child(1){
+.electronicsBox__item:nth-child(1) {
   margin-top: 15px;
 }
 .electronicsBox__item:hover {
