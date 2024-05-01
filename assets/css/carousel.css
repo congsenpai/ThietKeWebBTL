@@ -1,0 +1,16 @@
+#Carousel{
+  max-height: 580px;
+  overflow: hidden;
+}
+.carousel-item{
+  margin: 0 10%;
+}
+.carousel-control-prev-icon{
+ width: 3rem !important;
+ height: 3rem !important;
+}
+.carousel-control-next-icon{
+  width: 3rem !important;
+  height: 3rem !important;
+ }
+ 
