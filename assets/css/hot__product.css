@@ -1,0 +1,74 @@
+.hotProduct__container {
+  max-height: 820px;
+  text-align: center;
+  overflow: hidden;
+}
+.hotProduct__header {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.hotproduct {
+  background-color: #f7f7f7;
+}
+.hotproduct__list {
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+.hotproduct__item {
+  font-size: 1.4rem;
+  padding: 40px 40px 40px 0;
+  cursor: pointer;
+}
+.mainBox {
+  max-height: 683px;
+  max-width: 683px;
+  text-align: center;
+  border-radius: 8px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.imgBox-img {
+  width: 100%;
+  transition: transform 0.3s ease;  
+  object-fit: contain;
+}
+.mainBox:hover .imgBox-img {
+  transform: scale(1.1); /* Thay đổi tỉ lệ để phóng to 20% */
+  cursor: pointer; /* Đổi con trỏ khi hover */
+}
+.titleBox {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  height: 150px;
+}
+.btnBox {
+  position: relative;
+  overflow: hidden;
+  height: 70px;
+  margin-right: 28%;
+}
+.btn-titleBox {
+  position: absolute;
+  opacity: 0;
+}
+.mainBox:hover .btn-titleBox {
+  animation: fadeIn 0.5s ease;
+  opacity: 1;
+}
+.mainBox:hover .mainBox__subtitle{
+    display: none;
+}
+.mainBox__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: block;
+}
+.mainBox__subtitle {
+  font-size: 1.2rem;
+  color: grey;
+  display: block;
+}
