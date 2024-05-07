@@ -93,7 +93,7 @@
   color: grey;
   display: block;
 }
-.imgBox {
+.imgBox-hot-product {
   margin-bottom: 20px;
   background-color: white;
   width: 100%;
@@ -113,10 +113,10 @@
 .btnBox--right{
   opacity: 0;
 }
-.imgBox:hover .btnBox--right {
+.imgBox-hot-product:hover .btnBox--right {
   animation: fadeIn 0.5s ease;
   opacity: 1;
 }
-.imgBox:hover .imgBox__right--subTiltle {
+.imgBox-hot-product:hover .imgBox__right--subTiltle {
   display: none;
 }
