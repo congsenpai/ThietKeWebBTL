@@ -1,0 +1,74 @@
+/* Basic styling for the body and container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Search form styling */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Map container styling */
+#map {
+    height: 400px; /* Adjust as needed */
+    width: 100%; /* Full width of the container */
+    margin-bottom: 20px;
+}
+
+/* Warranty centers list styling */
+#warranty-centers-list h2 {
+    color: #333;
+}
+
+#centers-list {
+    list-style: none;
+    padding: 0;
+}
+
+#centers-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

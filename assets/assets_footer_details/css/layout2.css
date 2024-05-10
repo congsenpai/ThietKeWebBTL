@@ -1,0 +1,90 @@
+/* Basic styling for body and container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and description */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Search box styling */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Support sections layout */
+.support-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Support card styling */
+.support-card {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hidden content styling */
+.toggle-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Contact details styling */
+.contact-details {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    color: #555;
+}
