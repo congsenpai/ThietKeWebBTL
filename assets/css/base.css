@@ -1,32 +1,37 @@
-:root{
-    --white:#fff;
-    --white-littleGreen: rgb(247, 250, 247);
-    --modal-color: rgba(0, 0, 0, 0.2);
-    --base-font: 'Roboto', sans-serif;
-    --text-color:black;
+:root {
+  --white: #fff;
+  --white-littleGreen: rgb(247, 250, 247);
+  --modal-color: rgba(0, 0, 0, 0.2);
+  --base-font: "Roboto", sans-serif;
+  --text-color: black;
+  --text-sizeS:calc(0.35rem + 0.5vw);
+  --text-sizeM:calc(0.8rem + 0.5vw);
+  --text-sizeL:calc(1rem + 0.8vw);
+
 }
-ul{
-    list-style-type: none;
-    padding:0;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
-.img__mini{
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
+.img__mini {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
-.img__medium{
-    width: 66px;
-    height: 66px;
-    object-fit: contain;
+.img__medium {
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
 }
 #modal {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    animation: fadeIn 0.1s ease-in-out;
-    will-change: opacity;
-  }
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  animation: fadeIn 0.1s ease-in-out;
+  will-change: opacity;
+}
+
