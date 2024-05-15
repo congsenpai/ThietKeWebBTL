@@ -10,11 +10,13 @@
 #navbar__big::after {
   position: absolute;
   content: "";
-  width: calc(100% - 30px);
-  height: 1px;
-  bottom: 0;
   background-color: var(--modal-color);
-  left: 15px;
+  width: calc(100% - 50px);
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  bottom: 0;
+  height: 1px;
 }
 .navbar__left {
   display: flex;
@@ -192,19 +194,6 @@
 }
 .sidebar__part2 {
   margin-left: 15px;
-}
-
-#modal {
-  position: absolute;
-  display: none;
-  width: 100%;
-  height: 90vh;
-  top: 10vh;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  animation: fadeIn 0.1s ease-in-out;
-  will-change: opacity;
 }
 .modal__overlay {
   position: fixed;
