@@ -17,12 +17,27 @@
         <header class="hotProduct__header">Sản phẩm nổi bật</header>
         <div class="hotproduct">
             <ul class="hotproduct__list">
-                <li class="hotproduct__item">Ưu đãi</li>
+                <li class="hotproduct__item" autofocus>Ưu đãi</li>
                 <li class="hotproduct__item">Chăm sóc sức khỏe</li>
                 <li class="hotproduct__item">Thể thao</li>
                 <li class="hotproduct__item">Gia dụng</li>
                 <li class="hotproduct__item">Thiết bị điện tử</li>
             </ul>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const items = document.querySelectorAll('.hotproduct__item');
+
+                    items.forEach(item => {
+                        item.addEventListener('click', () => {
+                            // Remove the focused class from all items
+                            items.forEach(i => i.classList.remove('focused'));
+                            // Add the focused class to the clicked item
+                            item.classList.add('focused');
+                        });
+                    });
+                });
+
+            </script>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-6 d-none d-xl-block">
