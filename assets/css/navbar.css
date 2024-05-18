@@ -81,7 +81,7 @@
 }
 .navbar__logo {
   max-height: 50px;
-  width: 200px;
+  width: 150px;
 }
 .toggleBar {
   font-size: 1.8rem;
@@ -383,11 +383,11 @@
 .sportBox::before {
   position: absolute;
   display: block;
-  width: 20%;
+  width: 18%;
   height: 30px;
   content: "";
   top: -30px;
-  left: 10%;
+  left: 7%;
   background-color: transparent;
 }
 .sportBox__content {
@@ -485,7 +485,7 @@
   width: 750px;
   height: 500px;
   top: 40px;
-  left: -70px;
+  left: -200px;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
 }
@@ -498,11 +498,11 @@
 .electronicsBox::before {
   position: absolute;
   display: block;
-  width: 22%;
+  width: 25%;
   height: 30px;
   content: "";
   top: -30px;
-  left: 12%;
+  left: 22%;
   background-color: transparent;
 }
 .electronicsBox__content {
@@ -540,4 +540,18 @@
 }
 .electronicsBox__item:hover {
   cursor: pointer;
+}
+/* reponsive navbar */
+@media (max-width: 767px) {
+  .preferencialBox,
+  .healthCareBox,
+  .sportBox,
+  .housewareBox,
+  .electronicsBox {
+      display: none;
+  }
+  .sidebar__content {
+      width: 100%;
+      padding: 15px;
+  }
 }

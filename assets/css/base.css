@@ -5,8 +5,8 @@
   --base-font: "Roboto", sans-serif;
   --text-color: black;
   --text-sizeS:calc(0.35rem + 0.5vw);
-  --text-sizeM:calc(0.8rem + 0.5vw);
-  --text-sizeL:calc(1rem + 0.8vw);
+  --text-sizeM:calc(0.7rem + 0.5vw);
+  --text-sizeL:calc(0.9rem + 0.8vw);
 
 }
 ul {
