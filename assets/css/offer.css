@@ -1,0 +1,99 @@
+/* khám phá các ưu đãi hấp dẫn */
+.offer__header {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.offer__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.offer__item {
+    background-color: #f4f4f4;
+    width: 100px;
+    height: 110px;
+    border-radius: 8px;
+}
+
+.offer__Box {
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    background-color: #f7f7f7;
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.offer__Box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.offer__item--name {
+    line-height: 0.7rem;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/* khám phá các sản phẩm nổi bật */
+.offer_background{
+    background-color: #f4f4f4;
+}
+.img-box-offer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    height: 330px;
+    border-radius: 12px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+}
+
+.img-box--IMG {
+    width: 40%;
+    min-height: 192px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.img-box--Title {
+    display: block;
+    font-size: 1.3rem !important;
+    font-weight: 500;
+}
+
+.img-box-Note {
+    display: block;
+    font-size: 1.2rem !important;
+    font-size: 400;
+}
+
+.btnBoxOffer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 70px;
+}
+
+.btnBox--right {
+    opacity: 0;
+}
+
+.img-box-offer:hover .btnBox--right {
+    animation: fadeIn 0.5s ease;
+    opacity: 1;
+}
+
+.img-box-offer:hover .img-box--Note {
+    display: none;
+}
