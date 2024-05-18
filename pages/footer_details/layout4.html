@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm trung tâm bảo hành</title>
+    <link rel="stylesheet" href="./assets/css/layout4.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="./assets/js/layout4.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tìm trung tâm bảo hành</h1>
+
+        <!-- Search form -->
+        <div class="search-form">
+            <input type="text" id="search-input" placeholder="Enter your location">
+            <button id="search-button">Tìm kiếm</button>
+        </div>
+
+        <!-- Map container -->
+        <div id="map"></div>
+
+        <!-- Warranty centers list -->
+        <div id="warranty-centers-list">
+            <h2>Trung tâm bảo hành</h2>
+            <ul id="centers-list">
+                <!-- List of warranty centers will be populated here -->
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
