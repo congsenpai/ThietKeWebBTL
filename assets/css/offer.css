@@ -42,9 +42,10 @@
 }
 
 /* khám phá các sản phẩm nổi bật */
-.offer_background{
+.offer_background {
     background-color: #f4f4f4;
 }
+
 .img-box-offer {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -55,25 +56,32 @@
     justify-items: center;
     align-items: center;
     display: grid;
+    transition: transform 0.3s ease-in-out;
 }
 
 .img-box--IMG {
     width: 40%;
-    min-height: 192px;
-    transition: transform 0.3s ease;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
+    transition: transform 0.3s ease-in-out;
 }
+
 
 .img-box--Title {
     display: block;
     font-size: 1.3rem !important;
     font-weight: 500;
+    text-align: center;
+    transition: font-size 0.3s ease-in-out;
 }
 
 .img-box-Note {
     display: block;
     font-size: 1.2rem !important;
     font-size: 400;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .btnBoxOffer {
@@ -83,17 +91,24 @@
     position: relative;
     overflow: hidden;
     height: 70px;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .btnBox--right {
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .img-box-offer:hover .btnBox--right {
-    animation: fadeIn 0.5s ease;
+    animation: fadeIn 0.5s ease-in-out;
     opacity: 1;
 }
 
-.img-box-offer:hover .img-box--Note {
-    display: none;
+.img-box-offer:hover .img-box-Note {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-box-offer:hover {
+    transform: scale(1.02);
 }
