@@ -345,6 +345,7 @@
   justify-content: center;
   height: 100px;
   margin: auto;
+  cursor: pointer;
 }
 .imgBox span {
   display: block;
@@ -413,7 +414,7 @@
 .sportBox__item:nth-child(1) {
   margin-top: 15px;
 }
-.sport Box__item:hover {
+.sportBox__item:hover {
   cursor: pointer;
 }
 /* Houseware Box */
