@@ -17,23 +17,3 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 });
-
-
-function adjustSidebarContentWidth() {
-  var screenWidth =
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth;
-  var sidebarContent = document.querySelector(".sidebar__content");
-
-  // Kiểm tra kích thước màn hình
-  if (screenWidth < 768) {
-    sidebarContent.style.width = "100%"; // Áp dụng width mới là 100%
-  } else {
-    sidebarContent.style.width = "50%"; // Áp dụng width mới là 50% nếu không
-  }
-}
-
-// Gọi hàm khi trang được tải và khi kích thước cửa sổ thay đổi
-window.addEventListener("DOMContentLoaded", adjustSidebarContentWidth);
-window.addEventListener("resize", adjustSidebarContentWidth);
