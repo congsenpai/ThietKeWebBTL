@@ -51,6 +51,7 @@ body {
     margin: 10px;
     border-radius: 10px;
     transition: transform 0.3s;
+    height: 120px;
 }
 
 .category-box:hover {
