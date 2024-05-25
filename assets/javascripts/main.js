@@ -1,6 +1,6 @@
 function fetchhotProduct() {
     // Sử dụng fetch để lấy nội dung của footer.html
-    fetch('/ThietKeWebBTL/components/hot__product.html')
+    fetch('/components/hot__product.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('hotProduct__container').innerHTML = data;
