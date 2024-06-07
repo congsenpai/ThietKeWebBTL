@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Add Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../assets/javascripts/login.js" defer type="module"></script>
+    <script>
+      $(function () {
+        $("#navbar").load("../components/navbar.html");
+        $("#footer").load("../components/footer.html");
+      });
+    </script>
+<style>
+.frame {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-images img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.thumbnail-images {
+  display: flex;
+  justify-content: center;
+}
+.thumbnail-images img {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+.fullscreen-image-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 10000;
+}   
+.product {
+  width: calc(50% - 4px);
+  height: 250px;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+  margin: 2px;
+  list-style: none;
+}
+.product a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.product img {
+  width: 100%;
+  height: 135px;
+  object-fit: contain;
+}
+.product-info {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-info h3 {
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.5em;
+  max-height: 3em;
+}
+.product-info p {
+  font-weight: bold;
+  font-size: 15px;
+  color: #e40000;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+   
+.product-description {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 20px 20px 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.product-description ul {
+  list-style: none;
+  padding-left: 0;
+}
+.product-description li {
+  position: relative;
+  padding-bottom: 8px;
+  line-height: 1.6;
+}
+.product-description li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.ratings-section {
+  margin: 20px 20px 20px 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+.ratings-section h1{
+    font-size:25px;
+    margin-bottom:15px;
+    font-weight: 600;
+}
+.product-description h1{
+    font-size:25px;
+    margin-bottom:15px;
+    font-weight: 600;
+}
+.rating-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.rating-label {
+  flex: 0 0 30px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.rating-meter {
+  flex: 1;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.rating-meter-fill {
+  height: 100%;
+  background-color: #4eac4b;
+}
+.rating-count {
+  flex: 0 0 100px;
+  text-align: right;
+}
+
+.rating-form {
+  margin: 20px 20px 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+}
+.review-heading {
+  text-align: center;
+}
+.rating-stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.rating-stars input[type="radio"] {
+  display: none;
+}
+.rating-stars label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+  color: #fddb3a;
+}
+.rating-stars input[type="radio"]:checked ~ label {
+  color: #fddb3a;
+}
+
+.cart-icon,
+.payment-icon {
+  color: white;
+}
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+.popup {
+  text-align: center;
+}
+
+.popup-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.popup-content {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 10px;
+}   
+
+.review-heading {
+    font-size:25px;
+    margin-bottom:15px;
+    font-weight: 600;
+}
+
+.submit-review-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.submit-review-button:hover {
+  background-color: #0056b3;
+}
+.submit-review-button {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.product-price {
+  font-weight: bold;
+  font-size: 24px;
+  color: #f00;
+  margin-bottom: 15px;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #f0f0f0;
+    font-size: 16px;
+  }
+  .thumbnail-images {
+    display: flex;
+    justify-content: space-between;
+  }
+  .thumbnail-images img {
+    max-width: calc(22% - 6px);
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-details {
+    width: 100%;
+    margin-top: 20px;
+}
+}
+</style>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div style="padding-top: 80px;" class="frame">
+        <!-- LG Product -->
+        <div class="product-container">
+            <div class="product-images">
+                <img class="main-image" src="../assets/images/iPhone/1.jpg" alt="Main Image">
+                <div class="thumbnail-images">
+                    <img class="thumbnail" src="../assets/images/iPhone/1.jpg" alt="Thumbnail 1">
+                    <img class="thumbnail" src="../assets/images/iPhone/2.jpg" alt="Thumbnail 2">
+                    <img class="thumbnail" src="../assets/images/iPhone/3.jpg" alt="Thumbnail 3">
+                    <img class="thumbnail" src="../assets/images/iPhone/4.jpg" alt="Thumbnail 4">
+                </div>
+            </div>
+            <div class="fullscreen-image-container">
+                <span class="close-btn">&times;</span>
+                <img class="fullscreen-image" src="" alt="Fullscreen Image">
+            </div>
+            <div class="product-details">
+                    <h1 class="product-title">Điện thoại iPhone 15 Pro Max (256GB) - Chính hãng VN/A</h1>
+                    <p class="product-price">Giá: 28,690,000 ₫</p>
+                <p class="product-specifications">
+                    <strong>Thông số kỹ thuật:</strong> <br>
+                    Công nghệ màn hình: Màn hình Super Retina XDR <br>
+                    Kích thước màn hình: 6.7 inch<br>
+                    Vi xử lý: A17 Pro<br>
+                    Bộ nhớ trong: 256GB<br>
+                    RAM: 8GB<br>
+                </p>
+                <button type="button" class="btn btn-primary">Đặt mua</button>
+            </div>
+        </div>
+        <div class="popup-container" id="popupContainer">
+            <div class="popup">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2 class="popup-title">Thông báo</h2>
+                <p class="popup-content">Nội dung thông báo ở đây.</p>
+                <button class="confirm-btn" onclick="closePopup()">Xác nhận</button>
+            </div>
+        </div>
+        <div class="product-description">
+            <h1>Mô tả chi tiết</h1>
+            <ul>
+                <li><strong>Công nghệ màn hình:</strong> Màn hình Super Retina XDR, Tấm nền OLED, Dynamic Island, Công nghệ ProMotion với tốc độ làm mới thích ứng lên đến 120Hz, Màn hình Luôn Bật, Màn hình HDR, Tỷ lệ tương phản 2.000.000:1 , Màn hình True Tone, Màn hình có dải màu rộng (P3), Haptic Touch</li>
+                <li><strong>Độ phân giải:</strong> 1290 x 2796, Chính: 48MP, khẩu độ ƒ/1.78, Ultra Wide: 12MP, khẩu độ ƒ/2.2, Telephoto: 12MP, khẩu độ ƒ/2.8, Camera trước TrueDepth 12MP, khẩu độ ƒ/1.9</li>
+                <li><strong>Chip:</strong>  A17 Pro</li>
+                <li><strong>Pin:</strong> Pin Li-Ion 3687 mAh, Sạc nhanh 20W, Sạc không dây MagSafe lên đến 15W, Sạc không dây Qi lên đến 7.5W</li>
+                <li><strong>Ram:</strong> 8GB</li>
+                <li><strong>Bộ nhớ:</strong> 128GB</li>
+                <li><strong>Chống nước:</strong> IP68</li>
+                <li><strong>Chống bụi:</strong> IP6X</li>
+                <li><strong>Chất liệu:</strong> Kính Ceramic Shield trên mặt trước, Kính Ceramic Shield hoặc kính cường lực trên mặt sau, Khung thép không gỉ</li>
+            </ul>
+        </div>
+        <div class="ratings-section">
+            <h1>Đánh giá </h1>
+            <div class="rating-bar">
+                <div class="rating-label">5 &#9733;</div>
+                <div class="rating-meter">
+                    <div class="rating-meter-fill" style="width: 80%;"></div>
+                </div>
+                <div class="rating-count">100 đánh giá</div>
+            </div>
+            <div class="rating-bar">
+                <div class="rating-label">4 &#9733;</div>
+                <div class="rating-meter">
+                    <div class="rating-meter-fill" style="width: 60%;"></div>
+                </div>
+                <div class="rating-count">50 đánh giá</div>
+            </div>
+            <div class="rating-bar">
+                <div class="rating-label">3 &#9733;</div>
+                <div class="rating-meter">
+                    <div class="rating-meter-fill" style="width: 40%;"></div>
+                </div>
+                <div class="rating-count">20 đánh giá</div>
+            </div>
+            <div class="rating-bar">
+                <div class="rating-label">2 &#9733;</div>
+                <div class="rating-meter">
+                    <div class="rating-meter-fill" style="width: 20%;"></div>
+                </div>
+                <div class="rating-count">10 đánh giá</div>
+            </div>
+            <div class="rating-bar">
+                <div class="rating-label">1 &#9733;</div>
+                <div class="rating-meter">
+                    <div class="rating-meter-fill" style="width: 10%;"></div>
+                </div>
+                <div class="rating-count">5 đánh giá</div>
+            </div>
+        </div>
+        <div class="rating-form">
+            <h3 class="review-heading">Đánh giá sản phẩm</h3>
+            <form action="#" method="post" id="review-form">
+                <div class="rating-stars">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="5 sao"></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 sao"></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 sao"></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 sao"></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 sao"></label>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Nhận xét của bạn</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button type="button" class="btn btn-primary">Gửi đánh giá</button>
+            </form>
+        </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
