@@ -542,6 +542,10 @@
 .electronicsBox__item:hover {
   cursor: pointer;
 }
+/* Default width for sidebar__content */
+.sidebar__content {
+  width: 50%; /* Default width is 50% */
+}
 /* reponsive navbar */
 @media (max-width: 767px) {
   .preferencialBox,
@@ -556,9 +560,6 @@
       padding: 15px;
   }
 }
-/* Default width for sidebar__content */
-.sidebar__content {
-  width: 50%; /* Default width is 50% */
-}
+
 
 
