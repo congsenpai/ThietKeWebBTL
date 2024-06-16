@@ -21,6 +21,15 @@
     <!-- Boostrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>
+        function modalOn() {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function modalOff() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+
 </head>
 
 <body>
@@ -31,7 +40,7 @@
             </a>
             <div class="navbar__left">
                 <ul class="navbar__list d-none d-lg-flex">
-                    <li class="navbar__item">
+                    <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
                         <button class="navbar__item-btn navbar__preferencial">Ưu đãi
                             <div class="preferencialBox">
                                 <div class="preferencialBox__content">
@@ -59,7 +68,7 @@
                             </div>
                         </button>
                     </li>
-                    <li class="navbar__item">
+                    <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
                         <button class="navbar__item-btn navbar__healthCare">Chăm sóc sức khỏe
                             <div class="healthCareBox">
                                 <div class="healthCareBox__content row">
@@ -150,7 +159,7 @@
                             </div>
                         </button>
                     </li>
-                    <li class="navbar__item">
+                    <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
                         <button class="navbar__item-btn navbar__sport"> Thể thao
                             <div class="sportBox">
                                 <div class="sportBox_content row">
@@ -238,7 +247,7 @@
                             </div>
                         </button>
                     </li>
-                    <li class="navbar__item">
+                    <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
                         <button class="navbar__item-btn navbar__houseware">Gia dụng
                             <div class="housewareBox">
                                 <div class="container-fluid">
@@ -284,7 +293,7 @@
                             </div>
                         </button>
                     </li>
-                    <li class="navbar__item">
+                    <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
                         <button class="navbar__item-btn navbar__electronics">Thiết bị điện tử
                             <div class="electronicsBox">
                                 <div class="container-fluid">
@@ -342,10 +351,11 @@
             </div>
             <div class="navbar__right">
                 <ul class="navbar__list d-none d-xl-flex">
-                    <li class="navbar__item">
-                        <button class="navbar__item-btn">Hỗ trợ</button>
+                    <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
+                        <button class="navbar__item-btn" onclick="location.href='pages/layout-support_center.html';">Hỗ
+                            trợ</button>
                     </li>
-                    <li class="navbar__item">
+                    <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
                         <button class="navbar__item-btn">Doanh nghiệp</button>
                     </li>
                 </ul>
@@ -417,6 +427,7 @@
             </div>
         </nav>
     </div>
+    <div id="modal"></div>
 
 
 

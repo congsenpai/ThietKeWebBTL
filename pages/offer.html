@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Add Bootstrap JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../assets/javascripts/reg.js" defer type="module"></script>
+        <script>
+          $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+            $("#offer").load("../components/offer.html");
+          });
+        </script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="offer"></div>
+    <div id="footer"></div>
+</body>
+</html>
