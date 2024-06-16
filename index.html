@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartBrain - Mua sắm thông minh</title>
-    <script src="/assets/javascripts/main.js"></script>
-    <script src="/assets/javascripts/modal.js"></script>
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-          $("#footer").load("/components/footer.html"); 
-          $("#navbar__big").load("/components/navbar.html"); 
-          $("#hotProduct__container").load("/components/hot__product.html"); 
-          $("#offer").load("/components/offer.html");
-        });
+    <title>Document</title>
+        <!-- Add Bootstrap JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    </script>
+        <script src="../assets/javascripts/reg.js" defer type="module"></script>
+        <script>
+          $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+            $("#offer").load("../components/offer.html");
+            $("#hot__product").load("../components/hot__product.html");
+          });
+        </script>
 </head>
-
 <body>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div id="navbar__big"></div>
-        </div>
-        <div class="body_content">
-            <div id="modal"></div>
-            <div class="row d-none d-md-block">
-                <iframe src="/components/carousel.html" frameborder="0" width="100%" height="620px"
-                    style="padding-top: 20px;"></iframe>
-            </div>
-            <div class="row">
-                <div id="hotProduct__container"></div>
-            </div>
-            <div class="row">
-                <div id="offer"></div>
-            </div>
-            <div class="row">
-                <div id="footer"></div>
-            </div>
-        </div>
-
+    <div id="navbar"></div>
+    <div class="row d-none d-md-block">
+        <iframe src="/components/carousel.html" frameborder="0" width="100%" height="620px"
+            style="padding-top: 20px;"></iframe>
     </div>
-
+    <div id="hot__product"></div>
+    <div id="offer"></div>
+    <div id="footer"></div>
 </body>
-
 </html>
