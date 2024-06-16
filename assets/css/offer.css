@@ -7,6 +7,7 @@
     margin-bottom: 30px;
 }
 
+
 .offer__container {
     display: flex;
     justify-content: space-evenly;
@@ -48,6 +49,10 @@
 /* khám phá các sản phẩm nổi bật */
 .offer_background {
     background-color: #f4f4f4;
+}
+/* CSS để ẩn/hiển thị sản phẩm */
+.offer_background .row .col-md-4 {
+    display: block; /* Ban đầu hiển thị tất cả sản phẩm */
 }
 
 .img-box-offer {
