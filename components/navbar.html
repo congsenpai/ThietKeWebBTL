@@ -50,7 +50,9 @@
                                         <li class="preferencialBox__item">Lễ hội và sự kiện</li>
                                     </ul>
                                     <ul class="preferencialBox__header">Deal Shock
-                                        <li class="preferencialBox__item">Tất cả ưu đãi</li>
+                                        <li class="preferencialBox__item">
+                                            <a href="pages/offer.html">Tất cả ưu đãi</a>
+                                        </li>
                                         <li class="preferencialBox__item">Ưu đãi sinh viên</li>
                                         <li class="preferencialBox__item">Ưu đãi nhân viên đối tác</li>
                                         <li class="preferencialBox__item">Ưu đãi chính phủ</li>
@@ -356,13 +358,17 @@
                             trợ</button>
                     </li>
                     <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
-                        <button class="navbar__item-btn">Doanh nghiệp</button>
+                        <button class="navbar__item-btn" onclick="location.href='pages/about.html';">Doanh
+                            nghiệp</button>
                     </li>
                 </ul>
+
+                <!-- search -->
                 <div class="navbar__iconBox">
-                    <a href="" class="navbar__link">
+                    <button onclick="modalOn()" class="navbar__link" style="background-color: #fff;border: none;">
                         <i class="fa-solid fa-magnifying-glass navbar__icon"></i>
-                    </a>
+                    </button>
+
                     <a href="" class="navbar__link">
                         <i class="fa-solid fa-cart-shopping navbar__icon"></i>
                     </a>
@@ -425,6 +431,7 @@
 
                 </div>
             </div>
+            
         </nav>
     </div>
     <div id="modal"></div>

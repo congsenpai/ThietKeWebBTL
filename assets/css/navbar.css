@@ -120,11 +120,13 @@
   align-items: center;
   justify-content: space-around;
 }
+/* search */
 .search-icon {
   position: absolute;
   left: 10%;
   top: 24px;
 }
+
 .sidebar__header::after {
   position: absolute;
   content: "";
@@ -262,6 +264,15 @@
   font-weight: 300;
   margin-top: 15px;
 }
+.preferencialBox__item a {
+text-decoration: none;
+color: var(--text-color);
+}
+.preferencialBox__item a:hover {
+  text-decoration: none;
+  color: var(--text-color);
+  }
+
 .preferencialBox__item:hover {
   cursor: pointer;
 }

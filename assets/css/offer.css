@@ -1,6 +1,6 @@
 /* khám phá các ưu đãi hấp dẫn */
 .offer__header {
-    font-size: 2.2rem;
+    font-size: var(--text-sizeL);
     font-weight: 600;
     text-align: center;
     margin-top: 30px;

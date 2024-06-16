@@ -3,6 +3,7 @@
   overflow: hidden;
 }
 .hotProduct__header {
+  margin-top: 20px;
   font-size: var(--text-sizeL);
   font-weight: 600;
 }
