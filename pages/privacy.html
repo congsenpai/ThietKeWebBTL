@@ -12,9 +12,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../assets/javascripts/login.js" defer type="module"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assets/css/howto.css">
     <script>
         $(function () {
-            $("#navbar").load("../components/navbar.html");
             $("#footer").load("../components/footer.html");
         });
     </script>
@@ -32,18 +32,22 @@
             text-align: left;
             font-size: 30px;
         }
-        .container h2{
+
+        .container h2 {
             font-weight: 700;
             font-size: 20px;
         }
-        #sidebar{
+
+        #sidebar {
             font-size: 17px;
         }
-        #sidebar h1{
+
+        #sidebar h1 {
             font-size: 22px;
             background-color: gainsboro;
             padding: 5px 0 5px 0;
         }
+
         #sidebar ul {
             list-style-type: none;
             padding: 0;
@@ -61,13 +65,35 @@
             color: black;
             text-decoration: none;
         }
+
         #sidebar ul li a:hover {
             color: #ddd;
         }
     </style>
 </head>
+
 <body>
-    <div id="navbar"></div>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/assets/images/logo.png" alt="Logo" style="height: 40px;">
+            Chính sách bảo mật
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/layout-support_center.html">Câu hỏi thường gặp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/howto.html">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container mb-3 mt-4">
         <div class="row">
             <div class="col-sm-3">
@@ -82,39 +108,50 @@
             </div>
             <div class="col-sm-9">
                 <h1>Chính Sách Bảo Mật</h1>
-                <p>Chào mừng bạn đến với website Smartbrain! Chúng tôi cam kết bảo vệ quyền riêng tư và thông tin cá nhân của bạn. Chính sách Bảo Mật này giải thích cách thức chúng tôi thu thập, sử dụng, và bảo vệ thông tin cá nhân mà bạn cung cấp cho chúng tôi khi sử dụng website này.</p>
+                <p>Chào mừng bạn đến với website Smartbrain! Chúng tôi cam kết bảo vệ quyền riêng tư và thông tin cá
+                    nhân của bạn. Chính sách Bảo Mật này giải thích cách thức chúng tôi thu thập, sử dụng, và bảo vệ
+                    thông tin cá nhân mà bạn cung cấp cho chúng tôi khi sử dụng website này.</p>
 
                 <h2>1. Mục Đích Thu Thập Thông Tin</h2>
-                <p>Chúng tôi thu thập thông tin cá nhân như tên, địa chỉ email, và số điện thoại khi bạn đăng ký nhận thông tin về sản phẩm mới hoặc liên hệ với chúng tôi qua mẫu phản hồi. Thông tin này giúp chúng tôi cung cấp dịch vụ và hỗ trợ khách hàng tốt hơn.</p>
+                <p>Chúng tôi thu thập thông tin cá nhân như tên, địa chỉ email, và số điện thoại khi bạn đăng ký nhận
+                    thông tin về sản phẩm mới hoặc liên hệ với chúng tôi qua mẫu phản hồi. Thông tin này giúp chúng tôi
+                    cung cấp dịch vụ và hỗ trợ khách hàng tốt hơn.</p>
 
                 <h2>2. Phương Thức Thu Thập Thông Tin</h2>
-                <p>Thông tin cá nhân của bạn được thu thập thông qua mẫu đăng ký trên website để phân tích xu hướng sử dụng và cải thiện trải nghiệm trên website.</p>
+                <p>Thông tin cá nhân của bạn được thu thập thông qua mẫu đăng ký trên website để phân tích xu hướng sử
+                    dụng và cải thiện trải nghiệm trên website.</p>
 
                 <h2>3. Lưu Trữ và Bảo Vệ Thông Tin</h2>
-                <p>Chúng tôi áp dụng các biện pháp bảo mật vững chắc để bảo vệ thông tin cá nhân của bạn khỏi truy cập trái phép hoặc hư hại. Thông tin của bạn sẽ được lưu trữ an toàn và chỉ được giữ lại trong thời gian cần thiết.</p>
+                <p>Chúng tôi áp dụng các biện pháp bảo mật vững chắc để bảo vệ thông tin cá nhân của bạn khỏi truy cập
+                    trái phép hoặc hư hại. Thông tin của bạn sẽ được lưu trữ an toàn và chỉ được giữ lại trong thời gian
+                    cần thiết.</p>
 
                 <h2>4. Chia Sẻ Thông Tin</h2>
-                <p>Thông tin cá nhân của bạn chỉ được chia sẻ với các bên thứ ba khi cần thiết, chẳng hạn như các nhà cung cấp dịch vụ hỗ trợ chúng tôi trong việc vận hành website.</p>
+                <p>Thông tin cá nhân của bạn chỉ được chia sẻ với các bên thứ ba khi cần thiết, chẳng hạn như các nhà
+                    cung cấp dịch vụ hỗ trợ chúng tôi trong việc vận hành website.</p>
 
                 <h2>5. Quyền của Người Dùng</h2>
-                <p>Bạn có quyền truy cập, chỉnh sửa hoặc yêu cầu xóa thông tin cá nhân của mình. Để thực hiện các quyền này, bạn có thể liên hệ với chúng tôi qua địa chỉ email hoặc số điện thoại được cung cấp.</p>
+                <p>Bạn có quyền truy cập, chỉnh sửa hoặc yêu cầu xóa thông tin cá nhân của mình. Để thực hiện các quyền
+                    này, bạn có thể liên hệ với chúng tôi qua địa chỉ email hoặc số điện thoại được cung cấp.</p>
 
                 <h2>6. Thay Đổi Chính Sách Bảo Mật</h2>
-                <p>Chúng tôi có thể cập nhật Chính Sách Bảo Mật này theo thời gian để phản ánh các thay đổi trong thực tiễn của chúng tôi. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào qua website hoặc qua email.</p>
+                <p>Chúng tôi có thể cập nhật Chính Sách Bảo Mật này theo thời gian để phản ánh các thay đổi trong thực
+                    tiễn của chúng tôi. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào qua website hoặc qua
+                    email.</p>
 
                 <h2>7. Liên Hệ</h2>
                 <p>Nếu bạn có bất kỳ câu hỏi hoặc lo ngại nào về Chính Sách Bảo Mật này, vui lòng liên hệ với chúng tôi
 
             </div>
         </div>
-    </div>   
+    </div>
     <div id="footer"></div>
     <script>
-        $(document).ready(function(){
-        $("#sidebar-title").click(function(){
-            $("#sidebar ul li").toggle();
+        $(document).ready(function () {
+            $("#sidebar-title").click(function () {
+                $("#sidebar ul li").toggle();
+            });
         });
-    });
     </script>
 </body>
 
