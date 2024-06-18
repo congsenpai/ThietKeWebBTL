@@ -1,0 +1,124 @@
+/* khám phá các ưu đãi hấp dẫn */
+.offer__header {
+    font-size: var(--text-sizeL);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.offer__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.offer__item {
+    background-color: #f4f4f4;
+    width: 100px;
+    height: 110px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offer__Box {
+    margin-top: 5%;
+    margin-bottom: 8%;
+    background-color: #f7f7f7;
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+  
+}
+
+.offer__Box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.offer__item--name {
+    line-height: 0.7rem;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/* khám phá các sản phẩm nổi bật */
+.offer_background {
+    background-color: #f4f4f4;
+}
+/* CSS để ẩn/hiển thị sản phẩm */
+.offer_background .row .col-md-4 {
+    display: block; /* Ban đầu hiển thị tất cả sản phẩm */
+}
+
+.img-box-offer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    height: 330px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .img-box--IMG {
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+    max-height: 60%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+
+.img-box--Title {
+    display: block;
+    font-size: 1.3rem !important;
+    font-weight: 500;
+    text-align: center;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.img-box-Note {
+    display: block;
+    font-size: 1.2rem !important;
+    font-size: 400;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btnBoxOffer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 70px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btnBox--right {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.img-box-offer:hover .btnBox--right {
+    animation: fadeIn 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.img-box-offer:hover .img-box-Note {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-box-offer:hover {
+    transform: scale(1.02);
+}

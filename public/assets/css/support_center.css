@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.banner {
+    background-color: #007bff;
+    height: 200px;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 24px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.search-bar button {
+    border-radius: 20px;
+}
+
+.carousel-inner .carousel-item {
+    height: 50px;
+}
+
+.carousel-item p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.category-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    height: 120px;
+}
+
+.category-box:hover {
+    transform: scale(1.05);
+}
+
+.category-box i {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.category-box p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.container h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}

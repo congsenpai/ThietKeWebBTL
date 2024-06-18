@@ -1,0 +1,36 @@
+#Carousel{
+  max-height: 600px;
+  overflow: hidden;
+}
+.carousel-item{
+  margin: 0 10%;
+}
+.carousel-control-prev-icon{
+ width: 3rem !important;
+ height: 3rem !important;
+}
+.carousel-control-next-icon{
+  width: 3rem !important;
+  height: 3rem !important;
+ }
+/* CSS cho thiết bị có chiều rộng từ 500px đến 767px */
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  #Carousel {
+    max-height: 400px;
+  }
+  .carousel-control-prev-icon {
+    width: 2rem !important;
+    height: 2rem !important;
+}
+.carousel-control-next-icon{
+  width: 2rem !important;
+  height: 2rem !important;
+ }
+}
+@media only screen and (max-width: 500px) {
+  #Carousel {
+    display: none;
+  }
+}
+
+ 

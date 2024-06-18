@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ với Dịch vụ Khách hàng</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/howto.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <!-- Add Bootstrap JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#footer").load("../components/footer.html");
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/index.html">
+      <img src="/assets/images/logo.png" alt="Logo" style="height: 40px;">
+      Liên hệ dịch vụ khách hàng
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/layout-support_center.html">Câu hỏi thường gặp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/howto.html">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Danh sách Dịch vụ -->
+      <div class="col-md-4">
+        <div class="list-group">
+          <a href="#" class="list-group-item service-item active" data-content="contact">Liên hệ với Dịch vụ Khách
+            hàng</a>
+        </div>
+      </div>
+      <!-- Nội dung Dịch vụ -->
+      <div class="col-md-8">
+        <div id="service-content">
+          <h2>Liên hệ với Dịch vụ Khách hàng</h2>
+          <p>Nếu bạn có bất kỳ câu hỏi hoặc cần hỗ trợ, vui lòng liên hệ với nhóm dịch vụ khách hàng của chúng tôi.</p>
+          <div class="contact-form mt-4">
+            <form>
+              <div class="form-group">
+                <label for="name">Tên</label>
+                <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn">
+              </div>
+              <div class="form-group">
+                <label for="message">Tin nhắn</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Nhập tin nhắn của bạn"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Gửi</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <!-- Scripts -->
+  <script src="./assets/javascripts/howto.js"></script>
+
+  <!-- Font Awesome 5 links-->
+  <script src="https://kit.fontawesome.com/fddf5c0916.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
