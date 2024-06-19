@@ -25,9 +25,10 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <!-- Add Bootstrap JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../assets/javascripts/login.js" defer type="module"></script>
+    <script src="/assets/javascripts/offer.js"></script>
 </head>
 
 <body>
@@ -41,25 +42,25 @@
             </div>
             <div class="row">
                 <div class="col-md-12 offer__container">
-                    <button class="offer__item">
+                    <button type="button" class="offer__item" data-tag="Healthcare">
                         <div class="offer__Box">
                             <img src="/assets/images/offer/Healthcare.png" alt="">
                         </div>
                         <p class="offer__item--name">Chăm sóc sức khỏe</p>
                     </button>
-                    <button class="offer__item">
+                    <button type="button" class="offer__item" data-tag="Sport">
                         <div class="offer__Box">
                             <img src="/assets/images/offer/Sport.png" alt="">
                         </div>
                         <p class="offer__item--name">Thể thao</p>
                     </button>
-                    <button class="offer__item">
+                    <button type="button" class="offer__item" data-tag="Houseware">
                         <div class="offer__Box">
                             <img src="/assets/images/offer/Appliance.png" alt="">
                         </div>
                         <p class="offer__item--name">Gia dụng</p>
                     </button>
-                    <button class="offer__item">
+                    <button type="button" class="offer__item" data-tag="Electronics">
                         <div class="offer__Box">
                             <img src="/assets/images/offer/Electronics.jpg" alt="">
                         </div>
@@ -75,7 +76,7 @@
             <div class="container-fluid offer_background" id="productList">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Healthcare">
                             <img src="/assets/images/offer/Healthcare_Blackmore_vitamin.png" alt=""
                                 class="img-box--IMG">
                             <span class="img-box--Title">Viên uống Blackmores multivitamin + energy</span>
@@ -86,7 +87,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Healthcare">
                             <img src="/assets/images/offer/Healthcare_DHCvitamin.png" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Viên uống DHC vitamin tổng hợp</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -96,7 +97,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Healthcare">
                             <img src="/assets/images/offer/Healthcare_OneADay.png" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Viên uống bổ sung vitamin One A Day</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -108,7 +109,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Sport">
                             <img src="/assets/images/offer/Sport_RunningShoe.png" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Giày chạy bộ XTEP GCJ10</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -118,7 +119,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Sport">
                             <img src="/assets/images/offer/Sport_Clothes.png" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Bộ đồ thể thao YODY</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -128,7 +129,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Sport">
                             <img src="/assets/images/offer/Sport_Bike.png" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Xe đạp Giant 610</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -140,7 +141,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Houseware">
                             <img src="/assets/images/offer/Appliance_BoNoi_Inox.png" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Bộ nồi inox Arber AB-06CC</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -150,7 +151,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Houseware">
                             <img src="/assets/images/offer/Appliance_Cooker.png" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Nồi cơm điện Supor 1,5 lít</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -160,7 +161,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Houseware">
                             <img src="/assets/images/offer/Appliance_Refrigator.png" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Tủ lạnh 4 cửa Inverter Coex RM-4006MSG 474L</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -172,7 +173,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Electronics">
                             <img src="/assets/images/offer/Electronics_Phone.png" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Samsung Galaxy Z Fold 5 Chính hãng 12GB/256GB</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -182,7 +183,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Electronics">
                             <img src="/assets/images/offer/Electronics_AppleWatch.jpg" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Apple Watch Series 9</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>
@@ -192,7 +193,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="img-box-offer">
+                        <div class="img-box-offer" data-tags="Electronics">
                             <img src="/assets/images/offer/Electronics_Laptop.jpg" alt="" class="img-box--IMG">
                             <span class="img-box--Title">Laptop ROG Zephyrus M16</span>
                             <span class="img-box--Note">Ưu đãi 10%</span>

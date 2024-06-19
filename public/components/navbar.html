@@ -30,7 +30,16 @@
             document.getElementById('modal').style.display = 'none';
         }
     </script>
-
+<style>
+    .sidebar__content a{
+        text-decoration: none !important;
+        color: black !important;
+    }
+    .sidebar__content a:hover{
+        text-decoration: none !important;
+        color: black !important;
+    }
+</style>
 </head>
 
 <body>
@@ -42,7 +51,7 @@
             <div class="navbar__left">
                 <ul class="navbar__list d-none d-lg-flex">
                     <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
-                        <button class="navbar__item-btn navbar__preferencial">Ưu đãi
+                        <button type="button" class="navbar__item-btn navbar__preferencial" onclick="location.href='/pages/offer.html';">Ưu đãi
                             <div class="preferencialBox">
                                 <div class="preferencialBox__content">
                                     <ul class="preferencialBox__header">Mới & Nổi bật
@@ -75,7 +84,7 @@
                         </button>
                     </li>
                     <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
-                        <button class="navbar__item-btn navbar__healthCare">Chăm sóc sức khỏe
+                        <button type="button" class="navbar__item-btn navbar__healthCare" onclick="location.href='/pages/offer.html';">Chăm sóc sức khỏe
                             <div class="healthCareBox">
                                 <div class="healthCareBox__content row">
                                     <ul class="healthCareBox__header hcbContent__left col-md-3">Nhóm mặt hàng
@@ -166,7 +175,7 @@
                         </button>
                     </li>
                     <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
-                        <button class="navbar__item-btn navbar__sport"> Thể thao
+                        <button class="navbar__item-btn navbar__sport" type="button" onclick="location.href='/pages/offer.html';"> Thể thao
                             <div class="sportBox">
                                 <div class="sportBox_content row">
                                     <ul class="sportBox__header hcbContent__left col-md-3">Nhóm mặt hàng
@@ -254,7 +263,7 @@
                         </button>
                     </li>
                     <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
-                        <button class="navbar__item-btn navbar__houseware">Gia dụng
+                        <button class="navbar__item-btn navbar__houseware" type="button" onclick="location.href='/pages/offer.html';">Gia dụng
                             <div class="housewareBox">
                                 <div class="container-fluid">
                                     <div class="row">
@@ -300,7 +309,7 @@
                         </button>
                     </li>
                     <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
-                        <button class="navbar__item-btn navbar__electronics">Thiết bị điện tử
+                        <button class="navbar__item-btn navbar__electronics" type="button" onclick="location.href='/pages/offer.html';">Thiết bị điện tử
                             <div class="electronicsBox">
                                 <div class="container-fluid">
                                     <div class="electronicsBox_content row">
@@ -358,7 +367,7 @@
             <div class="navbar__right">
                 <ul class="navbar__list d-none d-xl-flex">
                     <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
-                        <button class="navbar__item-btn" onclick="location.href='/pages/layout-support_center.html';">Hỗ
+                        <button class="navbar__item-btn" onclick="location.href='/pages/privacy/layout-support_center.html';">Hỗ
                             trợ</button>
                     </li>
                     <li class="navbar__item" onmouseover="modalOn()" onmouseout="modalOff()">
@@ -375,10 +384,10 @@
                         <input type="text" id="searchInput" class="d-none">
                     </button>
 
-                    <a href="" class="navbar__link">
+                    <a href="/pages/cart.html" class="navbar__link">
                         <i class="fa-solid fa-cart-shopping navbar__icon"></i>
                     </a>
-                    <a href="" class="navbar__link">
+                    <a href="/pages/user.html" class="navbar__link">
                         <i class="fa-solid fa-clipboard-user navbar__icon"></i>
                     </a>
                     <label for="sidebar-input" class="toggleBar d-lg-none navbar__link">
@@ -395,41 +404,41 @@
                         </div>
                         <div class="sidebar__login">
                             <div class="sidebar__item">
-                                <div class="sidebar__title">Đăng nhập/Sign-Up
+                                <a href="/pages/login.html" class="sidebar__title">Đăng nhập/Sign-Up
                                     <p>Tích lũy đến 5% điểm thành tựu trên giá trị đơn hàng</p>
-                                </div>
+                                </a>
                                 <i class="fa-solid fa-caret-right"></i>
                             </div>
                         </div>
                         <div class="sidebar__part1">
                             <div class="sidebar__item">
-                                <div class="sidebar__title">Ưu đãi</div>
+                                <a href="/pages/offer.html" class="sidebar__title">Ưu đãi</a>
                                 <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <div class="sidebar__item">
-                                <div class="sidebar__title">Chăm sóc sức khỏe</div>
+                                <a href="/pages/offer.html" class="sidebar__title">Chăm sóc sức khỏe</a>
                                 <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <div class="sidebar__item">
-                                <div class="sidebar__title">Thể thao</div>
+                                <a href="/pages/offer.html" class="sidebar__title">Thể thao</a>
                                 <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <div class="sidebar__item">
-                                <div class="sidebar__title">Gia dụng</div>
+                                <a href="/pages/offer.html" class="sidebar__title">Gia dụng</a>
                                 <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <div class="sidebar__item">
-                                <div class="sidebar__title">Thiết bị điện tử</div>
+                                <a href="/pages/offer.html" class="sidebar__title">Thiết bị điện tử</a>
                                 <i class="fa-solid fa-caret-right"></i>
                             </div>
 
                         </div>
                         <div class="sidebar__part2">
                             <div class="sidebar__item">
-                                <div class="sidebar__title">Hỗ trợ</div>
+                                <a href="/pages/privacy/layout-support_center.html" class="sidebar__title">Hỗ trợ</a>
                             </div>
                             <div class="sidebar__item">
-                                <div class="sidebar__title">Doanh nghiệp</div>
+                                <a href="/pages/about.html" class="sidebar__title">Doanh nghiệp</a>
                             </div>
                         </div>
 
