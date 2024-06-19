@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang sản phẩm</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script>
+        $(function () {
+          $("#navbar").load("../components/navbar.html");
+          $("#footer").load("../components/footer.html");
+        });
+      </script>
 </head>
+
 <body>
+    <div id="navbar"></div>
     <div class="container mt-5">
         <h2>Các Sản Phẩm Bạn Quan Tâm</h2>
         <div class="row">
             <!-- Product 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card product-card">
-                    <img src="../assets/images/products/1.jpg" class="card-img-top product-img" alt="Samsung Galaxy J7 Pro">
+                    <img src="../assets/images/products/1.jpg" class="card-img-top product-img"
+                        alt="Samsung Galaxy J7 Pro">
                     <div class="card-body">
                         <p class="card-title">Samsung Galaxy J7 Pro</p>
                         <p class="card-text">Thiết kế nguyên khối kim loại<br>Camera "Chinh phục bóng tối"</p>
@@ -75,7 +86,8 @@
             <!-- Product 6 -->
             <div class="col-md-4 mb-4">
                 <div class="card product-card">
-                    <img src="../assets/images/products/6.jpg" class="card-img-top product-img" alt="Samsung Galaxy J7+">
+                    <img src="../assets/images/products/6.jpg" class="card-img-top product-img"
+                        alt="Samsung Galaxy J7+">
                     <div class="card-body">
                         <p class="card-title">Samsung Galaxy J7+</p>
                         <p class="card-text">Thiết kế nguyên khối kim loại<br>Camera kép xóa phông</p>
@@ -181,18 +193,20 @@
                 </div>
             </div>
         </div>
+        <div id="footer"></div>
     </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $(".product-card").hover(function(){
+        $(document).ready(function () {
+            $(".product-card").hover(function () {
                 $(this).toggleClass("shadow-lg");
                 $(this).find(".card-body").toggleClass("bg-light");
             });
         });
     </script>
+
+    
+
+
 </body>
+
 </html>
