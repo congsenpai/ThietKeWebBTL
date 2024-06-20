@@ -15,31 +15,13 @@
     $(function () {
       $("#navbar").load("../components/navbar.html");
       $("#footer").load("../components/footer.html");
+      $("#offer").load("../components/offer.html");
     });
   </script>
-  <style>
-    iframe {
-      width: 100%;
-      border: none;
-      padding-top: 20px;
-    }
-  </style>
 </head>
-
 <body>
   <div id="navbar"></div>
-  <iframe scrolling="no" id="offerFrame" src="/components/offer.html"></iframe>
+  <div id="offer"></div>
   <div id="footer"></div>
-  <script>
-    function receiveMessage(event) {
-      if (event.data.iframe && event.data.height) {
-        var iframe = document.getElementById(event.data.iframe);
-        iframe.style.height = event.data.height + 10 + 'px';
-      }
-    }
-
-    window.addEventListener('message', receiveMessage, false);
-  </script>
 </body>
-
 </html>
