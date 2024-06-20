@@ -1,8 +1,10 @@
 // Hàm xử lý khi click vào icon
 function Showinput() {
 const searchInput = document.getElementById('searchInput');
+const searchIcon= document.getElementById('searchIcon');
   // Hiển thị input và thêm class 'active' để mở rộng
   searchInput.classList.remove('d-none');
+  searchIcon.classList.add('d-none');
   
   searchInput.classList.add('active');
   
@@ -13,6 +15,7 @@ const searchInput = document.getElementById('searchInput');
   searchInput.addEventListener('blur', function() {
     searchInput.classList.remove('active');
     searchInput.classList.add('d-none');
+    searchIcon.classList.remove('d-none');
   });
 }
 // Hàm xử lý sự kiện khi nhấn nút enter
